@@ -1,3 +1,3 @@
-resource "random_string" "random" {
+resource "random_string" "suffix" {
   length = 8
 }
