@@ -32,6 +32,7 @@ resource "aws_wafv2_web_acl" "main" {
 
     statement {
       managed_rule_group_statement {
+        # https://docs.aws.amazon.com/ja_jp/waf/latest/developerguide/aws-managed-rule-groups-baseline.html
         name        = "AWSManagedRulesCommonRuleSet"
         vendor_name = "AWS"
       }
